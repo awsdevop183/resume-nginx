@@ -1,9 +1,6 @@
-FROM centos:7
+FROM nginx
 
-RUN yum install httpd -y
-
-
-WORKDIR /var/www/html/
+WORKDIR /usr/share/nginx/html
 
 
 COPY . .
